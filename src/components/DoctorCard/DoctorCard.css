@@ -1,0 +1,43 @@
+.doctor-card{
+    color:white;
+    border:2px solid white;
+    padding:5px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    height:250px;
+    width:230px;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    position: relative;
+    transition: 0.5s ease;
+}
+
+.role{
+    text-align: center;
+}
+
+.doctor-name{
+    font-size:15px;
+    text-align: center;
+    font-weight: 600;
+}
+.doctor-email{
+    font-size:12px;
+}
+
+.doctor-icons{
+    position: absolute;
+    bottom:0;
+    padding:5px;
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.432);
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+.doctor-icons a{
+    color:var(--color1);
+    font-size: 25px;
+}

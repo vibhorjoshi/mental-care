@@ -1,0 +1,22 @@
+.player-container{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding:20px 5px;
+    height:570px;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    max-width: max-content;
+}
+
+.player-container h4{
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.song-name{
+    font-size: 20px;
+    letter-spacing: 2px;
+}

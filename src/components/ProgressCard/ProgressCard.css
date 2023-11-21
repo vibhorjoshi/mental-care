@@ -1,0 +1,149 @@
+.progress-card-container {
+    width: 280px;
+    height: 400px;
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--borderColor);
+    /* border-radius: 10px; */
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.progress-card-container::before {
+    display: block;
+    content: "";
+    position: absolute;
+    transform: translate(-5px, -5px);
+    height: 100%;
+    width: 100%;
+    border: 2px var(--borderColor) solid;
+    transition: 0.3s ease;
+}
+.box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: max-content;
+    width: 90%;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.373);
+    margin-bottom: 25px;
+}
+
+.box .percent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.box .percent .dot {
+    position: absolute;
+    top: -80%;
+    right: -20%;
+    transform: translateX(-50%);
+    font-size: 150px;
+}
+
+.box .percent svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.box .percent svg circle {
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 7;
+    stroke: #000;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+.box .percent svg circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: rgba(128, 128, 128, 0.374);
+}
+.box .percent svg circle:nth-child(2) {
+    /* stroke-dashoffset: calc(440 - (440 * var(--score)) / 100); */
+    /* stroke-dashoffset: 100; */
+    /* animation-delay: 4s; */
+    animation: circlefill 3.5s ease;
+    animation-fill-mode: forwards;
+    stroke: white;
+}
+@keyframes circlefill {
+    0% {
+        stroke-dashoffset: 440;
+    }
+    20.5% {
+        stroke-dashoffset: 440;
+    }
+    100% {
+        stroke-dashoffset: var(--score);
+    }
+}
+
+.box .percent .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.box .percent .number h2 {
+    font-size: 48px;
+}
+
+.box .percent .number h2 span {
+    font-size: 24px;
+}
+
+.box .text {
+    margin-top: 20px;
+    padding: 10px 0 0;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.comparison-container {
+    padding: 10px 20px;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.range-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.range-container span {
+    font-size: 50px;
+    font-weight: 600;
+}
+.range-container p {
+    letter-spacing: 2px;
+    color: white;
+}
+
+@media (max-width: 620px) {
+    .hide{
+        display: none;
+    }
+    .range-container span {
+        font-size: 30px;
+        font-weight: 600;
+    }
+}

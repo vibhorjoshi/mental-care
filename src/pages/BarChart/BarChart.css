@@ -1,0 +1,18 @@
+.barchart-container{
+    backdrop-filter: blur(10px);
+    height:580px;
+    width:1000px;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    gap:20px;
+}
+.chart-heading{
+    font-size:25px;
+    letter-spacing: 2px;
+    color:white;
+    backdrop-filter: blur(4px);
+    text-align: center;
+}

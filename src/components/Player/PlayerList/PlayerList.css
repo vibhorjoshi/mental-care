@@ -1,0 +1,33 @@
+.player-list-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 5px;
+    height: 570px;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    max-width: max-content;
+}
+
+.player-list-card {
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    border: gray 2px solid;
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgba(255, 255, 255, 0.197);
+    color: white;
+}
+
+.song-name {
+    font-size: 15px;
+}

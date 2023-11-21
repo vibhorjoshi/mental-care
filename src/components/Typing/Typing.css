@@ -1,0 +1,51 @@
+.typing {
+    width: 4em;
+    height: 1em;
+    position: relative;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.typing__dot {
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
+    background: var(--color1);
+    border-radius: 50%;
+    opacity: 0;
+    animation: loadingFade 1s infinite;
+}
+
+.typing__dot:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.typing__dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing__dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes loadingFade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,49 @@
+.analytics-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.results-btn {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    text-decoration: none;
+    position: absolute;
+    left: -20%;
+    bottom: 40%;
+    background: transparent;
+    border: 2px solid white;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.results-btn span {
+    rotate: 180deg;
+}
+.facts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.fact {
+    backdrop-filter: blur(5px);
+    width: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.659);
+    padding: 5px;
+}
+.fact-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.fact-text .square {
+    background-color: white;
+    height: 10px;
+    width: 10px;
+}

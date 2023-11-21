@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Aboreto", cursive;
+}
+:root {
+  --color1: white;
+  --color2: black;
+  --color3: #1c8017;
+  --color4: #015431;
+  --color5: #59621a;
+  --color6: #e3cd76;
+}
+
+body {
+  margin: 0;
+  font-family: "Aboreto", cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}

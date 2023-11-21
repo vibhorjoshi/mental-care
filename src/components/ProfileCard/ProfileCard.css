@@ -1,0 +1,49 @@
+.profile-card{
+    color:white;
+    border:2px solid white;
+    padding:5px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    height:400px;
+    width:300px;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    position: relative;
+    transition: 0.5s ease;
+}
+
+.profile-name{
+    font-size:20px;
+    font-weight: 600;
+}
+.profile-email{
+    font-size:12px;
+}
+
+.icons{
+    position: absolute;
+    bottom:0;
+    padding:5px;
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.432);
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+.icons a{
+    color:var(--color1);
+    font-size: 30px;
+}
+.icons img{
+    height:40px;
+    width: 40px;
+}
+@media (max-width: 620px) {
+    
+    .profile-card{
+        height:320px;
+        width:280px;
+    }
+  }

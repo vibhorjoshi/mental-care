@@ -1,0 +1,24 @@
+.doctor-container{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:30px;
+    padding:10px 20px;
+}
+.doctor-heading{
+    font-size: 30px;
+    letter-spacing: 2px;
+    backdrop-filter: blur(3px);
+    padding:5px;
+}
+.doctor-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:20px;
+
+}
